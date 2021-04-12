@@ -42,13 +42,13 @@ async function getBan(userId, guildId, botToken) {
     }
 }
 
-async function unbanUser(userId, guildId, botToken) {
+/*async function unbanUser(userId, guildId, botToken) {
     const result = await callBanApi(userId, guildId, botToken, "DELETE");
 
     if (!result.ok && result.status !== 404) {
         console.log(await result.json());
         throw new Error("Failed to unban user");
     }
-}
+}*/
 
-module.exports = { getUserInfo, getBan, unbanUser };
+module.exports = { getUserInfo, getBan/*, unbanUser */};
